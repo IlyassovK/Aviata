@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/newsMainPage">
+
+    <fragment
+        android:id="@+id/newsMainPage"
+        android:name="com.ilyassov.aviata.feat.news.presentation.view.NewsMainPage"
+        android:label="fragment_news_main_page"
+        tools:layout="@layout/fragment_news_main_page" >
+        <action
+            android:id="@+id/action_newsMainPage_to_newsDetails"
+            app:destination="@id/newsDetails" />
+        <action
+            android:id="@+id/action_newsMainPage_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsDetails"
+        android:name="com.ilyassov.aviata.feat.news.presentation.view.details.NewsDetails"
+        tools:layout="@layout/fragment_news_detail"
+        android:label="NewsDetails" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.ilyassov.aviata.feat.favorites.presentation.view.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_newsDetails"
+            app:destination="@id/newsDetails" />
+    </fragment>
+</navigation>

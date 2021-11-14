@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ilyassov Karim</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msg_news">News</string>
+    <string name="msg_author">Author: </string>
+    <string name="msg_date">Date: </string>
+    <string name="msg_favorites">Favorites</string>
+    <string name="desc_favorite">Add to favorite</string>
+    <string name="msg_list_empty">List is empty</string>
+    <string name="msg_everything">Everything</string>
+    <string name="msg_headlines">Headlines</string>
+</resources>
